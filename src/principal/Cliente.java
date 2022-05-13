@@ -258,7 +258,7 @@ public class Cliente implements Cartas {
     public void cartaRobinson(List<Cliente> listaCliente1) {
 
         for (int i = 0; i < listaCliente1.size(); i++) {
-            System.out.println("Se ha generado la carta");
+            System.out.println("Se ha generado la carta de "+ listaCliente1.get(i).getNombre());
         }
     }
 
@@ -266,7 +266,7 @@ public class Cliente implements Cartas {
     public void cartaVips(List<Cliente> listaCliente1) {
 
         for (int i = 0; i < listaCliente1.size(); i++) {
-            System.out.println("Se ha generado la carta");
+            System.out.println("Se ha generado la carta "+ listaCliente1.get(i).getNombre());
         }
     }
 
@@ -284,5 +284,4 @@ public class Cliente implements Cartas {
     public int getSaldo() {
         return saldo;
     }
-
 }
