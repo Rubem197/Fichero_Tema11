@@ -35,6 +35,7 @@ public class Cliente implements Cartas {
 
     public Cliente() {
     }
+
     public Cliente(int numCliente, String nombre, String apellido1, String apellido2, int saldo,
                    int ingresosMedios, int gastosMedios, String direccion, int codigoPostal) {
         this.numCliente = numCliente;
@@ -88,11 +89,11 @@ public class Cliente implements Cartas {
                     break;
                 case 6:
                     generarListaClientesRobinson();
-                    cartaRobinson(listaClienteRobinson);
+                    cartaRobinson();
                     break;
                 case 7:
                     generarListaClientesVips();
-                    cartaRobinson(listaClienteVips);
+                    cartaVips();
                     break;
                 default:
                     System.out.println("Opción equivocada");
@@ -255,18 +256,18 @@ public class Cliente implements Cartas {
     }
 
     @Override
-    public void cartaRobinson(List<Cliente> listaCliente1) {
+    public void cartaRobinson() {
 
-        for (int i = 0; i < listaCliente1.size(); i++) {
-            System.out.println("Se ha generado la carta de "+ listaCliente1.get(i).getNombre());
+        for (int i = 0; i < listaClienteRobinson.size(); i++) {
+            System.out.println("Se ha generado la carta de "+ listaClienteRobinson.get(i).getNombre());
         }
     }
 
     @Override
-    public void cartaVips(List<Cliente> listaCliente1) {
+    public void cartaVips() {
 
-        for (int i = 0; i < listaCliente1.size(); i++) {
-            System.out.println("Se ha generado la carta "+ listaCliente1.get(i).getNombre());
+        for (int i = 0; i < listaClienteVips.size(); i++) {
+            System.out.println("Se ha generado la carta "+ listaClienteVips.get(i).getNombre());
         }
     }
 
