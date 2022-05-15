@@ -103,6 +103,11 @@ public class Cliente implements Cartas {
         }
     }
 
+    /**
+     * Metodo que lee un fichero separando los datos por espacios, y añade los datos a un ArrayList de tipo Cliente.
+     *
+     * @return
+     */
     public static List<Cliente> generarLista() {
         String text = "Clientes.txt";
         String linea;
@@ -145,6 +150,11 @@ public class Cliente implements Cartas {
         return listaCliente;
     }
 
+    /**
+     * Metodo que a traves de un ArrayList de clientes añade al ArrayList de saldo0 los datos de los clientes saldo0
+     *
+     * @return
+     */
     public static List<Cliente> generarListaClientesSaldo0() {
         int contador = 0;
 
@@ -162,7 +172,11 @@ public class Cliente implements Cartas {
         return listaClienteSaldo0;
     }
 
-
+    /**
+     * Metodo que a traves de un ArrayList de clientes añade al ArrayList de Credito los datos de los clientes Credito
+     *
+     * @return
+     */
     public static List<Cliente> generarListaClientesCredito() {
         int contador = 0;
 
@@ -180,7 +194,11 @@ public class Cliente implements Cartas {
         return listaClienteCredito;
     }
 
-
+    /**
+     * Metodo que a traves de un ArrayList de clientes añade al ArrayList de Debito los datos de los clientes Debito
+     *
+     * @return
+     */
     public static List<Cliente> generarListaClientesDebito() {
         int contador = 0;
 
@@ -199,6 +217,11 @@ public class Cliente implements Cartas {
         return listaClienteDebito;
     }
 
+    /**
+     * Metodo que a traves de un ArrayList de clientes añade al ArrayList de Robinson los datos de los clientes Robinson
+     *
+     * @return
+     */
     public static List<Cliente> generarListaClientesRobinson() {
         int contador = 0;
 
@@ -217,6 +240,11 @@ public class Cliente implements Cartas {
         return listaClienteRobinson;
     }
 
+    /**
+     * Metodo que a traves de un ArrayList de clientes añade al ArrayList de vips los datos de los clientes vips
+     *
+     * @return
+     */
     public static List<Cliente> generarListaClientesVips() {
         int contador = 0;
 
@@ -235,6 +263,12 @@ public class Cliente implements Cartas {
         return listaClienteVips;
     }
 
+    /**
+     * Metodo que inserta en el fichero del tipo de cliente que llama al metodo los datos de esos clientes al fichero especificado.
+     *
+     * @param listaCliente1 ArrayList con los datos de los clientes metidos por parametro
+     * @param fichero       nombre del fichero donde se guardara los datos de los clientes
+     */
     private static void insertarLista(List<Cliente> listaCliente1, String fichero) {
         BufferedWriter buffW;
         try {
